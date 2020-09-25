@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+<title>survey</title>
+<style>
+h1{
+   font-family:verdana;
+   background-color:powderblue;
+   color:black;
+   text-align:center;
+   }
+body{
+     background-color:grey;
+     border: 5px solid black;
+     width:1455px;
+     height:700px;
+     padding:20px;
+     margin:50;
+    }
+center{
+      margin:auto;
+      border: 5px solid black;
+      }
+p{ 
+   font-size:120%;
+   text-align:center;
+ }
+form{
+     text-align:center;
+    }
+</style>
+</head>
+<body>
+ <h1><b>Survey form</b></h1>
+ <p><b>Let us see how we can improve Codecamp</b></p><br>
+ <form action="thanks.html" target="blank">
+ <label for="Name">Name:</label>
+
+  <input type="text" id="Name" name="Name"><br><br>
+  <label for="birthday">Birthday:</label>
+ <input type="date" id="birthday" name="birthday"><br><br>
+ <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="roles">Which option best describes your current role?:</label>
+  <select id="roles" name="roles">
+    <option value="student">student</option>
+    <option value="professor">professor</option>
+    <option value="director">director</option>
+    <option value="HOD">HOD</option>
+  </select><br><br>
+  
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+  
+
+
+  <label for="recom">How likely is that you would recommend Codecamp to a friend?:</label>
+  <input type="radio" id="definitely" name="recom" value="definitely">
+  <label for="definitely">Definitely</label>
+  <input type="radio" id="maybe" name="recom" value="maybe">
+   <label for="maybe">Maybe</label>
+  <input type="radio" id="no" name="recom" value="no">
+  <label for="no">No</label><br><br>
+
+ 
+  <label for="recomm">Things that should be improved in the future.(check all that apply)</label><br>
+  <input type="checkbox" id="front" name="front" value="front">
+  <label for="front"> frontend projects</label>
+  <input type="checkbox" id="back" name="back" value="back">
+  <label for="back"> backend projects</label>
+  <input type="checkbox" id="stack" name="stack" value="stack">
+  <label for="stack"> full stack projects</label><br><br>
+  <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
